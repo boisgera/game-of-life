@@ -1,0 +1,2 @@
+#!/bin/env bash
+w4 run build/cart.wasm
