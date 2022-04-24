@@ -143,6 +143,14 @@ func next() {
 	*buffer = *screen
 }
 
+//go:export start
+func start() {
+	w4.PALETTE[0] = 0xf8f9fa
+	w4.PALETTE[1] = 0xc0eb75
+	w4.PALETTE[2] = 0xffa94d
+	w4.PALETTE[3] = 0x495057
+}
+
 //go:export update
 func update() {
 	if *w4.MOUSE_BUTTONS&0b1 != 0 {
